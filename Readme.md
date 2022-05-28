@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Viktoriya Kaminskaya](https://up.htmlacademy.ru/htmlcss/34/user/635891).
-* Наставник: `Валентина Видяева`.
+* Наставник: [Валентина Видяева](https://htmlacademy.ru/profile/id189794).
 
 ---
 
