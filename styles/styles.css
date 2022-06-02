@@ -36,6 +36,10 @@ body {
     border-radius: 4px;
 }
 
+.visually_hidden {
+    display: none;
+}
+
 .header_navigation_link {
     color: inherit;
     line-height: 26px;
@@ -43,6 +47,15 @@ body {
     font-weight: 700;
     text-align: center;
     text-decoration: none;
+}
+
+.header_navigation_search {
+    width: 18px;
+    height: 18px;
+    background-color: #FFFFFF;
+    background-image: url("../images/icons/search.svg");
+    border: none;
+    background-repeat: no-repeat;
 }
 
 .title {
@@ -76,7 +89,7 @@ body {
 }
 
 .light_blue_theme {
-    background-color: rgba(131, 179, 211, 0.12);
+    background-color: #f0f6fa;
 }
 
 .email_subscription {
@@ -85,6 +98,7 @@ body {
     background-image: url("../images/background_subscription.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+    height: 411px;
 }
 
 .footer_contact_phone {
