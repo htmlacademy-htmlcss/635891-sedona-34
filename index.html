@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона: Главная</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body>
     <header class="page_header">
@@ -11,7 +11,7 @@
         <img src="images/logo_sedona.svg" width="138" height="70" alt="Логотип сайта Седона.">
       </a>
       <nav class="header_navigation">
-        <ul class="header_navigation_list">
+        <ul class="header_navigation_list list_clear">
           <li class="header_navigation_item">
             <a class="header_navigation_link navigation_link_active" href="index.html">Главная</a>
           </li>
@@ -23,14 +23,14 @@
           </li>
         </ul>
 
-        <ul class="header_navigation_list">
+        <ul class="header_navigation_list list_clear">
           <li class="header_navigation_item">
-            <button class="header_navigation_search">
+            <button class="header_navigation_icon header_navigation_search">
               <span class="visually_hidden">Поиск</span>
             </button>
           </li>
           <li class="header_navigation_item"> 
-            <a class="header_navigation_icon" href="">
+            <a class="header_navigation_icon header_navigation_favourites" href="">
               <span class="visually_hidden">Избранное</span>
               <span class="count">12</span>
             </a>
@@ -50,13 +50,13 @@
 
         <p class="title_description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
 
-        <ol class="features_list">
-          <li class="features_item blue_theme">
-            <h2 class="featuers_item_title light_text">Настоящий городок</h2>
-            <p class="features_item_description light_text">— №1 —</p>
-            <p class="features_item_description light_text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        <ol class="features_list list_clear">
+          <li class="features_item item_city_bridge">
+            <h2 class="featuers_item_title">Настоящий городок</h2>
+            <p>— №1 —</p>
+            <p class="features_item_description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img class="features_item_picture" src="images/advantage_city.jpg" width="800" height="384" alt="Улица города Седоны с домами и цветущими деревьями.">
-            <ul class="additional_features_list">
+            <ul class="additional_features_list list_clear">
               <li class="features_item light_blue_theme">
                 <h3 class="featuers_item_title">Жильё</h3>
                 <p class="features_item_description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -71,23 +71,23 @@
               </li>
             </ul>
           </li>
-          <li class="features_item blue_theme">
+          <li class="features_item item_city_bridge">
             <img class="features_item_picture" src="images/advantage_canyon.jpg" width="800" height="384" alt="Вид на Мост Дьявола в каньоне, окресности города Седоны.">
-            <h2 class="featuers_item_title light_text">Там есть мост дьявола</h2>
-            <p class="features_item_description light_text">— №2 —</p>
-            <p class="features_item_description light_text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <h2 class="featuers_item_title">Там есть мост дьявола</h2>
+            <p class="features_item_description">— №2 —</p>
+            <p class="features_item_description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
-          <li class="features_item extra_light_blue_theme">
+          <li class="features_item item_sqare_tourists">
             <h3 class="featuers_item_title">Небольшая площадь</h3>
             <p class="features_item_description">— №3 —</p>
             <p class="features_item_description">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="features_item light_blue_theme">
+          <li class="features_item item_road">
             <h2 class="featuers_item_title">Красивая дорога</h2>
             <p class="features_item_description">— №4 —</p>
             <p class="features_item_description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="features_item extra_light_blue_theme">
+          <li class="features_item item_sqare_tourists">
             <h2 class="featuers_item_title">Мало туристов</h2>
             <p class="features_item_description">— №5 —</p>
             <p class="features_item_description">Большинство едет в Гранд Каньон и толпится там</p>
@@ -101,26 +101,26 @@
 
         <p class="title_description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
-        <button class="button">Поиск гостиницы в Cедоне</button>
+        <button class="button button_big">Поиск гостиницы в Cедоне</button>
       </section>
     </main>
 
     <footer class="footer">
-      <section class="email_subscription">
-        <h2 class="title light_text">Подпишитесь на рассылку</h2>
+      <section class="email_subscription email_subscription_index">
+        <h2 class="title">Подпишитесь на рассылку</h2>
 
-        <p class="title_description light_text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="title_description">Только полезная информация и никакого спама, честное бойскаутское!</p>
 
         <form class="newsletter_form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter_email" required>
-          <button class="newsletter_form_button" type="submit">Подписаться</button>
+          <button class="button_second button_big button_form" type="submit">Подписаться</button>
         </form>
       </section>
 
       <h2 class="visually_hidden">Мы в соцсетях</h2>
 
       <section class="footer_contacts">
-        <ul class="social_media_list">
+        <ul class="social_media_list list_clear">
           <li class="social_media_item">
             <a href="https://vk.com/htmlacademy" target="_blank">
               <img src="images/icons/vkontakte.svg" width="25" height="16" alt="Мы Вконтакте.">
