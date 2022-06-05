@@ -41,32 +41,32 @@ img {
     cursor: pointer;
 }
 
-.button_second {
+.button-second {
     background-color: #82B3D3;
 }
 
-.button_selected {
+.button-selected {
     background-color: #7DB54F;
 }
 
-.button_big {
+.button-big {
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
 }
 
-.button_form {
+.button-form {
     font-family: inherit;
     color: #FFFFFF;
     border: none;
     cursor: pointer;
 }
 
-.visually_hidden {
+.visually-hidden {
     display: none;
 }
 
-.header_navigation_link {
+.header-navigation-link {
     color: inherit;
     line-height: 26px;
     font-size: 20px;
@@ -75,24 +75,24 @@ img {
     text-decoration: none;
 }
 
-.list_clear {
+.list-clear {
     list-style-type: none;
 }
 
-.header_navigation_icon {
+.header-navigation-icon {
     background-color: #FFFFFF;
     border: none;
     background-repeat: no-repeat;
 }
 
-.header_navigation_search {
+.header-navigation-search {
     background-image: url("../images/icons/search.svg");
     width: 18px;
     height: 18px;
     cursor: pointer;
 }
 
-.header_navigation_favourites {
+.header-navigation-favourites {
     background-image: url("../images/icons/heart.svg");
     width: 20px;
     height: 20px;
@@ -106,79 +106,79 @@ img {
     text-transform: uppercase;
 }
 
-.title_description {
+.title-description {
     font-weight: 400;
     color: #333333;
     text-align: center;
 }
 
-.features_card {
+.features-card {
     width: 400px;
     height: 384px;
 }
 
-.features_list {
+.features-list {
     font-size: 18px;
     line-height: 21px;
     text-align: center;
 }
 
-.featuers_item_title {
+.featuers-item-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
 }
 
-.advantages_city_list {
+.advantages-city-list {
     text-align: center;
 }
 
-.advantages_city_title {
+.advantages-city-title {
     font-size: 24px;
     line-height: 28px;
     color: #000000;
     text-transform: uppercase;
 }
 
-.advantages_city_description {
+.advantages-city-description {
     color: #333333;
 }
 
-.advantages_city_hotels {
+.advantages-city-hotels {
     background-color: rgba(131, 179, 211, 0.12);
-    background-image: url("../images/icons/advantage_housing.svg");
+    background-image: url("../images/icons/advantage-housing.svg");
     background-repeat: no-repeat;
 }
 
-.advantages_city_food {
-    background-image: url("../images/icons/advantage_eating.svg");
+.advantages-city-food {
+    background-image: url("../images/icons/advantage-eating.svg");
     background-repeat: no-repeat;
 }
 
-.advantages_city_souvenirs {
+.advantages-city-souvenirs {
     background-color: rgba(131, 179, 211, 0.12);
-    background-image: url("../images/icons/advantage_souvenir.svg");
+    background-image: url("../images/icons/advantage-souvenir.svg");
     background-repeat: no-repeat;
 }
 
-.item_city_bridge {
+.item-city-bridge {
     color: #FFFFFF;
     background: #82B3D3;
 }
 
-.item_sqare_tourists {
+.item-sqare-tourists {
     background: rgba(131, 179, 211, 0.12);
 }
 
-.item_road {
+.item-road {
     background: rgba(131, 179, 211, 0.2);
 }
 
-.email_subscription_index {
+.email-subscription-index {
     color: #FFFFFF;
     background-color: #82B3D3;
-    background-image: url("../images/background_subscription.jpg");
+    background-image: url("../images/background-subscription.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     width: 1200px;
@@ -193,7 +193,7 @@ img {
     border: none;
 }
 
-.footer_contact_phone {
+.footer-contact-phone {
     color: #000000;
     font-weight: 400;
     font-size: 40px;
@@ -203,44 +203,42 @@ img {
     text-decoration: none;
 }
 
-.hotel_filter {
+.hotel-filter {
     color: #FFFFFF;
     background-color: #82B3D3;
-    background-image: url("../images/background_filter.jpg");
+    background-image: url("../images/background-filter.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     line-height: 21px;
-    width: 1200px;
-    height: 403px;
 }
 
-.catalog_title {
+.catalog-title {
     font-size: 60px;
     line-height: 78px;
 }
 
-.breadcrumb_link {
+.breadcrumb-link {
     font-size: 16px;
 }
 
-.catalog_filter_title {
+.catalog-filter-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
 }
 
-.filter_item_label {
+.filter-item-label {
     font-size: 18px;
 }
 
-.price_number_scale {
+.price-number-scale {
     background: none;
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
     border-radius: 4px;
 }
 
-.filter_reset_button {
+.filter-reset-button {
     background: none;
     font-family: inherit;
     font-size: 16px;
@@ -250,13 +248,13 @@ img {
     cursor: pointer;
 }
 
-.select_control {
+.select-control {
     font-family: inherit;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
 }
 
-.product_card_link {
+.product-card-link {
     font-family: inherit;
     font-size: 24px;
     line-height: 28px;
@@ -264,7 +262,7 @@ img {
     text-decoration: none;
 }
 
-.catalog_text_details {
+.catalog-text-details {
     color: #333333;
     font-size: 18px;
     line-height: 21px;
@@ -278,7 +276,7 @@ img {
     border-radius: 4px;
 }
 
-.pagination_item {
+.pagination-item {
     width: 60px;
     height: 60px;
     background: #82B3D3;
@@ -286,11 +284,11 @@ img {
     border: none;
 }
 
-.pagination_item_current {
+.pagination-item-current {
     background-color: #F2F2F2;
 }
 
-.pagination_link {
+.pagination-link {
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
@@ -299,7 +297,7 @@ img {
     text-transform: uppercase;
 }
 
-.pagination_link_current {
+.pagination-link-current {
     color:#000000;
 }
 
