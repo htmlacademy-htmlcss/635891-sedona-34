@@ -14,6 +14,11 @@
     font-display: swap;
 }
 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
     height: 100%;
     background-color: #E5E5E5;
@@ -152,6 +157,7 @@ input[type="email"]::placeholder {
 
 .welcome-text {
     display: block;
+    position: relative;
 }
 
 .welcome-banner {
@@ -164,7 +170,7 @@ input[type="email"]::placeholder {
     width: 100%;
     height: 57px;
     background-image: url("../images/welcome-group-divider.svg");
-    margin-top: -57px;
+    margin-top: -55px;
     position: relative;
     background-repeat: no-repeat;
 }
@@ -430,16 +436,16 @@ input[type="email"]::placeholder {
 
 .header-wrapper {
     display: flex;
-    width: 1060px;
-    margin: 0 auto;
+    padding: 0 70px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navigation-wrapper {
     display: flex;
     width: 874px;
     margin: 0;
-    padding: 0;
+    padding-left: 169px;
     align-items: center;
 }
 
@@ -459,6 +465,7 @@ input[type="email"]::placeholder {
     width: 306px;
     margin-left: auto;
     justify-content: end;
+    align-items: center;
 }
 
 .illustrated-items {
@@ -514,6 +521,9 @@ input[type="email"]::placeholder {
 
 .page-header-logo {
     margin-right: 30px;
+    position: absolute;
+    margin-bottom: -5px;
+    z-index: 2;
 }
 
 .catalog-filter-wrapper {
