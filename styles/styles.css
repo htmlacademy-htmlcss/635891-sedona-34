@@ -54,9 +54,8 @@ input[type="email"]::placeholder {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 160px;
-    height: 37px;
     display: inline-block;
+    padding: 9px 15px 8px;
 }
 
 .button-basic {
@@ -74,6 +73,11 @@ input[type="email"]::placeholder {
 .button-big {
     font-size: 20px;
     line-height: 36px;
+    padding: 12px 15px;
+}
+
+.hotel-search-button {
+    width: 574px;
 }
 
 .button-form {
@@ -253,8 +257,7 @@ input[type="email"]::placeholder {
 
 .hotel-search {
     text-align: center;
-    width: 600px;
-    margin: 0 auto;
+    padding: 91px 70px 93px;
 }
 
 .email-subscription {
@@ -277,12 +280,17 @@ input[type="email"]::placeholder {
     border: none;
     border-radius: 10px 0px 0px 10px;
     height: 60px;
-    width: 600px;
     padding: 0;
 }
 
 .newsletter-form {
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-form-field {
+    width: 600px;
 }
 
 .footer-contact-phone {
@@ -467,7 +475,8 @@ input[type="email"]::placeholder {
     width: 1060px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0;
+    padding: 40px 70px 30px 70px;
 }
 
 .social-media-list {
@@ -487,8 +496,7 @@ input[type="email"]::placeholder {
 }
 
 .email-description {
-    width: 600px;
-    margin: 0 auto;
+    padding: 94px 70px;
 }
 
 .page-header-logo {
@@ -496,15 +504,18 @@ input[type="email"]::placeholder {
 }
 
 .catalog-filter-wrapper {
-    width: 1060px;
-    margin: 0 auto;
+    padding: 35px 70px 70px;
 }
 
-.catalog-filter-group {
+.filter-group {
     border: none;
     padding: 0;
     margin: 0 70px 0 0;
     width: 150px;
+}
+
+.filter-price-scale {
+    width: 288px;
 }
 
 .filter-group-type {
