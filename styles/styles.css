@@ -92,12 +92,23 @@ input[type="email"]::placeholder {
 }
 
 .header-navigation-link {
+    display: block;
+    position: relative;
     color: inherit;
     line-height: 26px;
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
-    padding-right: 34px;
+    padding: 20px 17px;
+}
+
+.navigation-link-current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 17px;
+    right: 17px;
+    border-bottom: 2px solid #756257;
 }
 
 .list-clear {
@@ -313,7 +324,6 @@ input[type="email"]::placeholder {
     background-size: cover;
     background-repeat: no-repeat;
     line-height: 21px;
-    background-size: 100% auto;
 }
 
 .catalog-title {
@@ -482,7 +492,6 @@ input[type="email"]::placeholder {
 
 .social-media-list {
     width: 184px;
-    display: inline;
     display: flex;
 }
 
