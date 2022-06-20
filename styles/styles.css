@@ -132,6 +132,7 @@ input[type="email"]::placeholder {
 
 .filter-submit-button {
     height: 48px;
+    margin-bottom: 20px;
 }
 
 .product-card-button {
@@ -471,7 +472,7 @@ input[type="email"]::placeholder {
     padding: 0 85px;
 }
 
-.page-footer-container {
+.footer-contacts {
     width: 1060px;
     display: flex;
     justify-content: space-between;
@@ -490,9 +491,12 @@ input[type="email"]::placeholder {
     width: 156px;
 }
 
-.social-media-item {
+.social-media-item a {
     width: 47px;
     height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
 }
 
 .email-description {
@@ -524,6 +528,11 @@ input[type="email"]::placeholder {
 
 .filter-wrapper {
     display: flex;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-direction: column;
 }
 
 .hotel-search-results {
@@ -570,11 +579,9 @@ input[type="email"]::placeholder {
     margin: 0 auto;
 }
 
-.pagination-container {
+.pagination {
     display: flex;
-    width: 400px;
-    justify-content: space-between;
-    margin-right: 270px;
+    gap: 8px;
 }
 
 .pagination-section {
