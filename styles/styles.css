@@ -453,15 +453,11 @@ input[type="email"]::placeholder {
     align-items: center;
 }
 
-.navigation-wrapper {
+.header-navigation {
     display: flex;
     margin: 0;
     padding-left: 169px;
     align-items: center;
-}
-
-.header-navigation {
-    display: flex;
 }
 
 .header-navigation-list {
