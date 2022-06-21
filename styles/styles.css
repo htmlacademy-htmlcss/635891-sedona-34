@@ -624,3 +624,10 @@ input[type="email"]::placeholder {
     display: flex;
     justify-content: space-between;
 }
+
+.product-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 20px;
+    align-items: center;
+}
