@@ -181,8 +181,8 @@ input[type="email"]::placeholder {
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 30px;
+    margin: 0;
+    padding-bottom: 30px;
 }
 
 .title-description {
@@ -192,6 +192,14 @@ input[type="email"]::placeholder {
     margin-bottom: 0;
 }
 
+.hotel-search-description {
+    padding-bottom: 56px;
+}
+
+.email-text {
+    padding-bottom: 46px;
+}
+
 .features-item {
     margin: 0;
     padding: 0;
@@ -199,6 +207,11 @@ input[type="email"]::placeholder {
 
 .features-card {
     min-height: 384px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 85px;
 }
 
 .features-list {
@@ -244,16 +257,19 @@ input[type="email"]::placeholder {
 .advantages-city-hotels {
     background-image: url("../images/icons/advantage-housing.svg");
     background-repeat: no-repeat;
+    background-position: left 50% top 25%;
 }
 
 .advantages-city-food {
     background-image: url("../images/icons/advantage-eating.svg");
     background-repeat: no-repeat;
+    background-position: left 50% top 25%;
 }
 
 .advantages-city-souvenirs {
     background-image: url("../images/icons/advantage-souvenir.svg");
     background-repeat: no-repeat;
+    background-position: left 50% top 25%;
 }
 
 .advantages-city-item:nth-child(odd) {
@@ -485,10 +501,6 @@ input[type="email"]::placeholder {
     padding: 63px 70px 90px;
 }
 
-.card-content {
-    padding: 0 85px;
-}
-
 .footer-contacts {
     width: 1060px;
     display: flex;
@@ -561,6 +573,7 @@ input[type="email"]::placeholder {
 .select-wrapper {
     display: flex;
     align-items: center;
+    padding: 50px 0 56px;
 }
 
 .layout-wrapper {
