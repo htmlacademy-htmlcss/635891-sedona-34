@@ -151,10 +151,6 @@ input[type="email"]::placeholder {
     margin-bottom: 20px;
 }
 
-.product-card-button {
-    width: 140px;
-}
-
 .welcome-text {
     display: block;
     position: relative;
@@ -609,6 +605,14 @@ input[type="email"]::placeholder {
 .hotel-catalog-container {
     width: 1060px;
     margin: 0 auto;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 18px;
+    margin: 0;
+    padding: 0;
 }
 
 .pagination {
