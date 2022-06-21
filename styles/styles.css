@@ -455,7 +455,6 @@ input[type="email"]::placeholder {
 
 .navigation-wrapper {
     display: flex;
-    width: 874px;
     margin: 0;
     padding-left: 169px;
     align-items: center;
@@ -528,10 +527,9 @@ input[type="email"]::placeholder {
 }
 
 .page-header-logo {
-    margin-right: 30px;
     position: absolute;
-    margin-bottom: -5px;
     z-index: 2;
+    top: 0;
 }
 
 .catalog-filter-wrapper {
