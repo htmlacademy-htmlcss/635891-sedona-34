@@ -44,10 +44,6 @@ img {
     max-width: 100%;
 }
 
-input[type="email"]::placeholder {
-    padding-left: 22px;
-}
-
 .button {
     font-family: inherit;
     font-weight: 700;
@@ -88,9 +84,7 @@ input[type="email"]::placeholder {
 
 .button-form {
     border-radius: 0px 10px 10px 0px;
-    height: 60px;
     width: 200px;
-    padding: 0;
 }
 
 .visually-hidden {
@@ -207,7 +201,7 @@ input[type="email"]::placeholder {
     text-align: center;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 }
 
 .title-description {
@@ -328,11 +322,12 @@ input[type="email"]::placeholder {
 
 .hotel-search {
     text-align: center;
-    padding: 91px 70px 93px;
+    padding: 90px 70px 93px;
 }
 
 .email-subscription {
     height: 411px;
+    padding: 94px 70px;
 }
 
 .email-subscription-index {
@@ -351,11 +346,10 @@ input[type="email"]::placeholder {
     border: none;
     border-radius: 10px 0px 0px 10px;
     height: 60px;
-    padding: 0;
+    padding: 20px;
 }
 
 .newsletter-form {
-    text-align: center;
     display: flex;
     justify-content: center;
 }
@@ -535,10 +529,8 @@ input[type="email"]::placeholder {
 }
 
 .footer-contacts {
-    width: 1060px;
     display: flex;
     justify-content: space-between;
-    margin: 0;
     padding: 40px 70px 30px 70px;
 }
 
@@ -558,10 +550,6 @@ input[type="email"]::placeholder {
     display: block;
     text-align: center;
     line-height: 40px;
-}
-
-.email-description {
-    padding: 94px 70px;
 }
 
 .page-header-logo {
