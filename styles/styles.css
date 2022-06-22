@@ -146,6 +146,7 @@ img {
     background-color: #FFFFFF;
     position: relative;
     z-index: 1;
+    padding-right: 20px;
 }
 
 .count {
@@ -528,10 +529,10 @@ img {
     padding: 63px 70px 90px;
 }
 
-.footer-contacts {
+.footer {
     display: flex;
     justify-content: space-between;
-    padding: 40px 70px 30px 70px;
+    padding: 45px 70px 35px 70px;
 }
 
 .social-media-list {
