@@ -47,89 +47,87 @@
     </header>
 
     <main class="main-container main-catalog">
-      <div class="main-filter">
 
-        <section class="hotel-filter">
-          <div class="catalog-filter-wrapper">
-            <h1 class="catalog-title">Гостиницы Седоны</h1>
+      <section class="hotel-filter">
+        <div class="catalog-filter-wrapper">
+          <h1 class="catalog-title">Гостиницы Седоны</h1>
 
-            <ol class="breadcrumb list-clear">
-              <li class="breadcrumb-item">
-                <a href="index.html" title="Главная страница"></a>
-              </li>
-              <li class="breadcrumb-item">
-                <a class="breadcrumb-link">Гостиницы</a>
-              </li>
-            </ol>
+          <ol class="breadcrumb list-clear">
+            <li class="breadcrumb-item">
+              <a href="index.html" title="Главная страница"></a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="breadcrumb-link">Гостиницы</a>
+            </li>
+          </ol>
 
-            <h2 class="visually-hidden">Фильтр параметров для поиска гостиниц</h2>
+          <h2 class="visually-hidden">Фильтр параметров для поиска гостиниц</h2>
 
-            <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
 
-              <div class="filter-wrapper">
-                <fieldset class="filter-group">
-                  <legend class="catalog-filter-title">Инфраструктура:</legend>
-                    <ul class="list-clear">
-                      <li>
-                        <label class="filter-item-label">
-                          <input class="filter-item-input" type="checkbox" name="water-pool" checked>
-                          Бассейн
-                        </label>
-                      </li>
-                      <li>
-                        <label class="filter-item-label">
-                          <input class="filter-item-input" type="checkbox" name="parking" checked>
-                          Парковка
-                        </label>
-                      </li>
-                      <li>
-                        <label class="filter-item-label">
-                          <input class="filter-item-input" type="checkbox" name="wi-fi">
-                          Wi-Fi
-                        </label>
-                      </li>
-                    </ul>
-                </fieldset>
+            <div class="filter-wrapper">
+              <fieldset class="filter-group">
+                <legend class="catalog-filter-title">Инфраструктура:</legend>
+                  <ul class="list-clear">
+                    <li>
+                      <label class="filter-item-label">
+                        <input class="filter-item-input" type="checkbox" name="water-pool" checked>
+                        Бассейн
+                      </label>
+                    </li>
+                    <li>
+                      <label class="filter-item-label">
+                        <input class="filter-item-input" type="checkbox" name="parking" checked>
+                        Парковка
+                      </label>
+                    </li>
+                    <li>
+                      <label class="filter-item-label">
+                        <input class="filter-item-input" type="checkbox" name="wi-fi">
+                        Wi-Fi
+                      </label>
+                    </li>
+                  </ul>
+              </fieldset>
 
-                <fieldset class="filter-group filter-group-type">
-                  <legend class="catalog-filter-title">Тип жилья</legend>
-                    <ul class="list-clear">
-                      <li>
-                        <label class="filter-item-label">
-                          <input class="filter-item-input" type="radio" name="filter-item" checked>
-                          Гостиница
-                        </label>
-                      </li>
-                      <li>
-                        <label class="filter-item-label">
-                          <input class="filter-item-input" type="radio" name="filter-item">
-                          Мотель
-                        </label>
-                      </li>
-                      <li>
-                        <label class="filter-item-label">
-                          <input class="filter-item-input" type="radio" name="filter-item">
-                          Апартаменты
-                        </label>
-                      </li>
-                    </ul>
-                </fieldset>
+              <fieldset class="filter-group filter-group-type">
+                <legend class="catalog-filter-title">Тип жилья</legend>
+                  <ul class="list-clear">
+                    <li>
+                      <label class="filter-item-label">
+                        <input class="filter-item-input" type="radio" name="filter-item" checked>
+                        Гостиница
+                      </label>
+                    </li>
+                    <li>
+                      <label class="filter-item-label">
+                        <input class="filter-item-input" type="radio" name="filter-item">
+                        Мотель
+                      </label>
+                    </li>
+                    <li>
+                      <label class="filter-item-label">
+                        <input class="filter-item-input" type="radio" name="filter-item">
+                        Апартаменты
+                      </label>
+                    </li>
+                  </ul>
+              </fieldset>
 
-                <fieldset class="filter-group filter-price-scale">
-                  <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                  <input class="price-number-scale min-number-scale" placeholder="от" type="number" name="minimal-price">
-                  <input class="price-number-scale max-number-scale" placeholder="до" type="number" name="maximal-price">
-                  <!--место для полей и бегунка с ценами-->
-                </fieldset>
-                <div class="filter-buttons">
-                      <button class="button button-second filter-submit-button" type="submit">Применить</button>
-                      <button class="filter-reset-button" type="reset">Сбросить</button>
-                </div>
+              <fieldset class="filter-group filter-price-scale">
+                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <input class="price-number-scale min-number-scale" placeholder="от" type="number" name="minimal-price">
+                <input class="price-number-scale max-number-scale" placeholder="до" type="number" name="maximal-price">
+                <!--место для полей и бегунка с ценами-->
+              </fieldset>
+              <div class="filter-buttons">
+                    <button class="button button-second filter-submit-button" type="submit">Применить</button>
+                    <button class="filter-reset-button" type="reset">Сбросить</button>
               </div>
-            </form>
-          </div>
-        </section>
-      </div>
+            </div>
+          </form>
+        </div>
+      </section>
 
       <div class="hotel-catalog-container">
         <section class="hotel-search-results">
