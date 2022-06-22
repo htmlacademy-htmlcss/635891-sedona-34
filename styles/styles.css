@@ -146,7 +146,6 @@ img {
     background-color: #FFFFFF;
     position: relative;
     z-index: 1;
-    padding-right: 20px;
 }
 
 .count {
@@ -512,6 +511,10 @@ img {
     margin-left: auto;
     align-items: center;
 }
+
+.header-navigation-user .header-navigation-item:nth-child(2) {
+    margin-right: 20px;
+  }
 
 .illustrated-items {
     display: flex;
