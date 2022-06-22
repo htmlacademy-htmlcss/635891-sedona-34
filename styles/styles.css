@@ -88,7 +88,14 @@ img {
 }
 
 .visually-hidden {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .header-navigation-link {
@@ -521,6 +528,7 @@ img {
     width: 568px;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 .header-navigation-item {
@@ -531,6 +539,7 @@ img {
     display: flex;
     margin-left: auto;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .header-navigation-user .header-navigation-item:nth-child(2) {
@@ -562,6 +571,7 @@ img {
 .social-media-list {
     width: 184px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .developer-link-wrapper {
