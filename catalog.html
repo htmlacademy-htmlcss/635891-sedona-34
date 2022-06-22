@@ -65,65 +65,63 @@
 
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
 
-            <div class="filter-wrapper">
-              <fieldset class="filter-group">
-                <legend class="catalog-filter-title">Инфраструктура:</legend>
-                  <ul class="list-clear">
-                    <li>
-                      <label class="filter-item-label">
-                        <input class="filter-item-input" type="checkbox" name="water-pool" checked>
-                        Бассейн
-                      </label>
-                    </li>
-                    <li>
-                      <label class="filter-item-label">
-                        <input class="filter-item-input" type="checkbox" name="parking" checked>
-                        Парковка
-                      </label>
-                    </li>
-                    <li>
-                      <label class="filter-item-label">
-                        <input class="filter-item-input" type="checkbox" name="wi-fi">
-                        Wi-Fi
-                      </label>
-                    </li>
-                  </ul>
-              </fieldset>
+            <fieldset class="filter-group">
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
+                <ul class="list-clear">
+                  <li>
+                    <label class="filter-item-label">
+                      <input class="filter-item-input" type="checkbox" name="water-pool" checked>
+                      Бассейн
+                    </label>
+                  </li>
+                  <li>
+                    <label class="filter-item-label">
+                      <input class="filter-item-input" type="checkbox" name="parking" checked>
+                      Парковка
+                    </label>
+                  </li>
+                  <li>
+                    <label class="filter-item-label">
+                      <input class="filter-item-input" type="checkbox" name="wi-fi">
+                      Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+            </fieldset>
 
-              <fieldset class="filter-group filter-group-type">
-                <legend class="catalog-filter-title">Тип жилья</legend>
-                  <ul class="list-clear">
-                    <li>
-                      <label class="filter-item-label">
-                        <input class="filter-item-input" type="radio" name="filter-item" checked>
-                        Гостиница
-                      </label>
-                    </li>
-                    <li>
-                      <label class="filter-item-label">
-                        <input class="filter-item-input" type="radio" name="filter-item">
-                        Мотель
-                      </label>
-                    </li>
-                    <li>
-                      <label class="filter-item-label">
-                        <input class="filter-item-input" type="radio" name="filter-item">
-                        Апартаменты
-                      </label>
-                    </li>
-                  </ul>
-              </fieldset>
+            <fieldset class="filter-group">
+              <legend class="catalog-filter-title">Тип жилья</legend>
+                <ul class="list-clear">
+                  <li>
+                    <label class="filter-item-label">
+                      <input class="filter-item-input" type="radio" name="filter-item" checked>
+                      Гостиница
+                    </label>
+                  </li>
+                  <li>
+                    <label class="filter-item-label">
+                      <input class="filter-item-input" type="radio" name="filter-item">
+                      Мотель
+                    </label>
+                  </li>
+                  <li>
+                    <label class="filter-item-label">
+                      <input class="filter-item-input" type="radio" name="filter-item">
+                      Апартаменты
+                    </label>
+                  </li>
+                </ul>
+            </fieldset>
 
-              <fieldset class="filter-group filter-price-scale">
-                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                <input class="price-number-scale min-number-scale" placeholder="от" type="number" name="minimal-price">
-                <input class="price-number-scale max-number-scale" placeholder="до" type="number" name="maximal-price">
-                <!--место для полей и бегунка с ценами-->
-              </fieldset>
-              <div class="filter-buttons">
-                    <button class="button button-second filter-submit-button" type="submit">Применить</button>
-                    <button class="filter-reset-button" type="reset">Сбросить</button>
-              </div>
+            <fieldset class="filter-group filter-price-scale">
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <input class="price-number-scale min-number-scale" placeholder="от" type="number" name="minimal-price">
+              <input class="price-number-scale max-number-scale" placeholder="до" type="number" name="maximal-price">
+              <!--место для полей и бегунка с ценами-->
+            </fieldset>
+            <div class="filter-buttons">
+                  <button class="button button-second filter-submit-button" type="submit">Применить</button>
+                  <button class="filter-reset-button" type="reset">Сбросить</button>
             </div>
           </form>
         </div>
@@ -137,7 +135,7 @@
               <p class="title select-title">Найдено гостиниц: 38</p>
 
               <select class="select-control catalog-text-details" aria-label="Сортировка">
-                <option value="cheap">Сначала дешёвые</option>
+                <option value="cheap" selected>Сначала дешёвые</option>
                 <option value="expensive">Сначала дорогие</option>
                 <option value="popular">Сначала популярные</option>
               </select>
@@ -160,7 +158,7 @@
           <ol class="product-list list-clear">
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-img" src="images/hotels/hotel-1.jpg" width="300" height="211" alt="Вид на звездное небо из ущелья каньона Седона.">
+                <img class="product-card-image" src="images/hotels/hotel-1.jpg" width="300" height="211" alt="Вид на звездное небо из ущелья каньона Седона.">
                 <h3 class="product-card-title">Amara Resort & Spa</h3>
               </a>
               <div class="product-wrapper">
@@ -180,7 +178,7 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-img" src="images/hotels/hotel-2.jpg" width="300" height="211" alt="Каньон Седона на фоне темного облачного неба с радугой.">
+                <img class="product-card-image" src="images/hotels/hotel-2.jpg" width="300" height="211" alt="Каньон Седона на фоне темного облачного неба с радугой.">
                 <h3 class="product-card-title">Villas at Poco Diablo</h3>
               </a>
               <div class="product-wrapper">
@@ -200,7 +198,7 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-img" src="images/hotels/hotel-3.jpg" width="300" height="211" alt="Каньон Седона на фоне ярко-голубого неба в дневное время суток.">
+                <img class="product-card-image" src="images/hotels/hotel-3.jpg" width="300" height="211" alt="Каньон Седона на фоне ярко-голубого неба в дневное время суток.">
                 <h3 class="product-card-title">Desert Quail Inn</h3>
               </a>
               <div class="product-wrapper">
@@ -219,7 +217,7 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-img" src="images/hotels/hotel-4.jpg" width="300" height="211" alt="Каньон Седона на фоне звездного ночного неба.">
+                <img class="product-card-image" src="images/hotels/hotel-4.jpg" width="300" height="211" alt="Каньон Седона на фоне звездного ночного неба.">
                 <h3 class="product-card-title">GreenTree Inn</h3>
               </a>
               <div class="product-wrapper">

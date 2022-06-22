@@ -426,6 +426,12 @@ img {
     border-radius: 4px;
     width: 290px;
     height: 50px;
+    padding: 14px 20px;
+    line-height: 21px;
+    background-image: url("../images/icons/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center right 5%;
+    appearance: none;
 }
 
 .select-total {
@@ -451,9 +457,17 @@ img {
 .rating {
     font-size: 16px;
     line-height: 20px;
+    font-weight: 400;
     text-transform: uppercase;
     background: #F2F2F2;
     border-radius: 4px;
+    color: #333333;
+    margin: 0;
+}
+
+.divider {
+    border: 1px solid #E6E6E6;
+    margin-bottom: 30px;
 }
 
 .pagination-item {
@@ -574,18 +588,15 @@ img {
     border: none;
     padding: 0;
     margin: 0 70px 0 0;
-    width: 150px;
+    max-width: 150px;
+    min-width: 0;
 }
 
 .filter-price-scale {
-    width: 288px;
+    margin-left: auto;
 }
 
-.filter-group-type {
-    margin-right: 175px;
-}
-
-.filter-wrapper {
+.filter-form {
     display: flex;
 }
 
@@ -605,14 +616,9 @@ img {
 }
 
 .layout-wrapper {
-    width: 160px;
-    margin-left: auto;
-}
-
-.layout-button {
-    width: 48px;
-    height: 48px;
-    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    margin-left: 78px;
 }
 
 .layout-list {
@@ -630,8 +636,22 @@ img {
     background-repeat: no-repeat;
 }
 
+.layout-button {
+    width: 48px;
+    height: 48px;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+    background-position: center;
+}
+
+.layout-button-active {
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
 .select-title {
-    margin-right: 150px;
+    margin-right: auto;
+    margin-bottom: 0;
 }
 
 .hotel-catalog-container {
@@ -645,6 +665,24 @@ img {
     column-gap: 18px;
     margin: 0;
     padding: 0;
+    margin-bottom: 66px;
+}
+
+.product-card {
+    max-width: 340px;
+    min-height: 438px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product-card-image {
+    display: block;
+    width: 100%;
+}
+
+.product-card-title {
+    margin: 16px 0;
 }
 
 .pagination {
