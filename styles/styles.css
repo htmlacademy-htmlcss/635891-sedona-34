@@ -14,6 +14,7 @@
     font-display: swap;
 }
 
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -123,27 +124,55 @@ input[type="email"]::placeholder {
 }
 
 .header-navigation-icon {
-    background-color: #FFFFFF;
-    border: none;
+    background-color: transparent;
     background-repeat: no-repeat;
-    margin: 12px;
+    background-position: center;
+    padding: 0;
+    border: none;
 }
 
 .header-navigation-search {
     background-image: url("../images/icons/search.svg");
-    width: 18px;
-    height: 18px;
+    display: block;
+    width: 42px;
+    height: 66px;
+    margin: 0;
+    border: 0;
+    background-color: #FFFFFF;
     cursor: pointer;
 }
 
 .header-navigation-favourites {
     background-image: url("../images/icons/heart.svg");
+    display: block;
+    width: 42px;
+    height: 66px;
+    margin: 0;
+    border: 0;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+}
+
+.count {
+    text-align: center;
     width: 20px;
     height: 20px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: -0.1em;
+    background: #7DB54F;
+    color: #FFFFFF;
+    position: absolute;
+    z-index: 2;
+    top: 15px;
+    right: -2px;
 }
 
 .header-navigation-button {
-    margin-left: 20px;
+    width: 160px;
 }
 
 .filter-submit-button {
@@ -178,7 +207,7 @@ input[type="email"]::placeholder {
     text-align: center;
     text-transform: uppercase;
     margin: 0;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .title-description {
@@ -189,11 +218,11 @@ input[type="email"]::placeholder {
 }
 
 .hotel-search-description {
-    padding-bottom: 56px;
+    margin-bottom: 56px;
 }
 
 .email-text {
-    padding-bottom: 46px;
+    margin-bottom: 46px;
 }
 
 .features-item {
@@ -229,6 +258,15 @@ input[type="email"]::placeholder {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    margin-bottom: 0 0 30px;
+}
+
+.feature-number {
+    margin-bottom: 0 0 30px;
+}
+
+.features-item-description {
+    margin: 0;
 }
 
 .advantages-city-list {
@@ -240,6 +278,7 @@ input[type="email"]::placeholder {
 }
 
 .advantages-city-title {
+    padding-top: 182px;
     font-size: 24px;
     line-height: 28px;
     color: #000000;
@@ -467,17 +506,18 @@ input[type="email"]::placeholder {
     padding: 0;
 }
 
+.header-navigation-item {
+    height: 100%;
+}
+
 .header-navigation-user {
     display: flex;
-    width: 306px;
     margin-left: auto;
-    justify-content: end;
     align-items: center;
 }
 
 .illustrated-items {
     display: flex;
-    width: 1200px;
 }
 
 .illustrated-reverse {
