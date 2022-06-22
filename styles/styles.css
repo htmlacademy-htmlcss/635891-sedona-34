@@ -170,6 +170,7 @@ img {
 }
 
 .filter-submit-button {
+    width: 160px;
     height: 48px;
     margin-bottom: 20px;
 }
@@ -385,8 +386,10 @@ img {
     margin: 0 0 10px;
 }
 
-.breadcrumb {
+.breadcrumbs {
     margin-bottom: 40px;
+    display: flex;
+    align-content: center;
 }
 
 .breadcrumb-link {
