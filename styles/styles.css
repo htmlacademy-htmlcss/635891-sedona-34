@@ -373,7 +373,7 @@ img {
     color: #FFFFFF;
     background-color: #82B3D3;
     background-image: url("../images/background-subscription.jpg");
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
