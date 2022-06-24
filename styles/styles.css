@@ -634,9 +634,37 @@ img {
     line-height: 40px;
 }
 
-/*.social:hover svg {
-    fill: #6C9E42;
-}*/
+.social path {
+    fill: #83B3D3;
+}
+
+.social:hover path {
+    fill: #68A2CA;
+}
+
+.social:focus path {
+    fill: #68A2CA;
+}
+
+.social:active path {
+    fill: rgba(104, 162, 202, 0.3);
+}
+
+.developer-link path {
+    fill: #000000;
+}
+
+.developer-link:hover path {
+    fill: #756157;
+}
+
+.developer-link:focus path {
+    fill: #756157;
+}
+
+.developer-link:active path {
+    fill: rgba(117, 97, 87, 0.3);
+}
 
 .page-header-logo {
     position: absolute;
@@ -723,8 +751,7 @@ img {
 }
 
 .hotel-catalog-container {
-    width: 1060px;
-    margin: 0 auto;
+    margin: 0 71px 0 73px;
 }
 
 .product-list {
@@ -774,5 +801,10 @@ img {
     gap: 16px 20px;
     align-items: center;
     margin-top: auto;
+}
+
+.product-card-details {
+    font-size: 18px;
+    line-height: 21px;
 }
 
