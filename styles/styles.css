@@ -697,9 +697,12 @@ img {
     background-position: center;
 }
 
-.layout-button-active {
+.layout-button:hover, .layout-button:active {
     border: 2px solid #000000;
-    border-radius: 4px;
+}
+
+.layout-button:focus {
+    border: 2px solid #68A2CA;
 }
 
 .select-title {
