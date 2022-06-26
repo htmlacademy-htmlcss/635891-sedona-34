@@ -70,47 +70,53 @@
 
             <fieldset class="filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
-                <ul class="list-clear">
+                <ul class="catalog-filter-list list-clear">
                   <li>
                     <label class="filter-item-label">
-                      <input class="filter-item-input" type="checkbox" name="infrastrusture" value="water-pool" id="infrastrusture-water-pool" checked>
-                      Бассейн
+                      <input class="visually-hidden filter-item-input" type="checkbox" name="infrastrusture" value="water-pool" id="infrastrusture-water-pool" checked>
+                      <span class="item-mark"></span>
+                      <span class="item-label">Бассейн</span>
                     </label>
                   </li>
                   <li>
                     <label class="filter-item-label">
-                      <input class="filter-item-input" type="checkbox" name="infrastrusture" value="parking" id="infrastrusture-parking" checked>
-                      Парковка
+                      <input class="visually-hidden filter-item-input" type="checkbox" name="infrastrusture" value="parking" id="infrastrusture-parking" checked>
+                      <span class="item-mark"></span>
+                      <span class="item-label">Парковка</span>
                     </label>
                   </li>
                   <li>
                     <label class="filter-item-label">
-                      <input class="filter-item-input" type="checkbox" name="infrastrusture" value="wi-fi" id="infrastrusture-wi-fi">
-                      Wi-Fi
+                      <input class="visually-hidden filter-item-input" type="checkbox" name="infrastrusture" value="wi-fi" id="infrastrusture-wi-fi">
+                      <span class="item-mark"></span>
+                      <span class="item-label">Wi-fi</span>
                     </label>
                   </li>
                 </ul>
             </fieldset>
 
             <fieldset class="filter-group">
-              <legend class="catalog-filter-title">Тип жилья</legend>
-                <ul class="list-clear">
+              <legend class="catalog-filter-title">Тип Жилья:</legend>
+                <ul class="catalog-filter-list list-clear">
                   <li>
                     <label class="filter-item-label">
-                      <input class="filter-item-input" type="radio" name="type" value="hotel" id="type-hotel" checked>
-                      Гостиница
+                      <input class="visually-hidden filter-item-input" type="radio" name="type" value="hotel" id="type-hotel" checked>
+                      <span class="item-mark"></span>
+                      <span class="item-label">Гостиница</span>
                     </label>
                   </li>
                   <li>
                     <label class="filter-item-label">
-                      <input class="filter-item-input" type="radio" name="type" value="motel" id="type-motel">
-                      Мотель
+                      <input class="visually-hidden filter-item-input" type="radio" name="type" value="motel" id="type-motel">
+                      <span class="item-mark"></span>
+                      <span class="item-label">Мотель</span>
                     </label>
                   </li>
                   <li>
                     <label class="filter-item-label">
-                      <input class="filter-item-input" type="radio" name="type" value="apartment" id="type-apartment">
-                      Апартаменты
+                      <input class="visually-hidden filter-item-input" type="radio" name="type" value="apartment" id="type-apartment">
+                      <span class="item-mark"></span>
+                      <span class="item-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -120,8 +126,20 @@
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <input class="price-number-scale min-number-scale" placeholder="от" type="number" name="minimal-price">
               <input class="price-number-scale max-number-scale" placeholder="до" type="number" name="maximal-price">
-              <!--место для полей и бегунка с ценами-->
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="right: 51px; width: 227px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
+
             <div class="filter-buttons">
                   <button class="button button-second filter-submit-button" type="submit">Применить</button>
                   <button class="filter-reset-button" type="reset">Сбросить</button>

@@ -424,6 +424,8 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     line-height: 21px;
+    min-height: 393px;
+    background-position: top center;
 }
 
 .catalog-title {
@@ -446,11 +448,62 @@ img {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
+    margin-bottom: 30px;
 }
 
 .filter-item-label {
-    font-size: 18px;
+    position: relative;
+    display: block;
+    margin-bottom: 16px;
+    
 }
+
+.item-mark {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.item-label {
+    font-size: 18px;
+    padding-left: 40px;
+}
+
+.filter-item-label:hover .item-mark {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.filter-item-label:focus .item-mark {
+    background: rgba(255, 255, 255, 0.6);
+    border: 3px solid #83B3D3;
+}
+
+.filter-item-label:active .item-mark {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.filter-item-input[type="checkbox"]:checked + .item-mark {
+    background-image: url(../images/icons/checkbox.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.filter-item-input[type="radio"] + .item-mark {
+    border-radius: 50%;
+}
+
+.filter-item-input[type="radio"]:checked + .item-mark::before {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #3F5E72;
+    border-radius: 50%;
+    content: "";
+    top: 5px;
+    left: 5px;
+  }
 
 .price-number-scale {
     background: none;
@@ -807,4 +860,50 @@ img {
     font-size: 18px;
     line-height: 21px;
 }
+
+.range-scale {
+    position: relative;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+    position: absolute;
+    height: 4px;
+    background-color: #FFFFFF;
+  }
+
+  .range-toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+  }
+
+  .range-toggle:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+  
+  .range-toggle:active {
+    border: 2px solid #83B3D3;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+  }
+
+  .range-toggle:focus {
+    border: 3px solid #83B3D3;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .toggle-min {
+    top: -8px;
+    left: -10px;
+  }
+  
+  .toggle-max {
+    top: -8px;
+    right: -10px;
+  }
 
