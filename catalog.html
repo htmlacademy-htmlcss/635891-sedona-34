@@ -124,10 +124,22 @@
                 </ul>
             </fieldset>
 
-            <fieldset class="filter-group filter-price-scale">
+            <fieldset class="filter-group filter-price-scale">              
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <input class="price-number-scale min-number-scale" placeholder="от" type="number" name="minimal-price">
-              <input class="price-number-scale max-number-scale" placeholder="до" type="number" name="maximal-price">
+              <div class="price-scale-group">
+                <label class="price-label">
+                  <span class="price-field-placeholder">
+                    от
+                  </span>
+                  <input class="price-field min-price-field" type="number" name="minimal-price" value="0">
+                </label>
+                <label class="price-label">
+                  <span class="price-field-placeholder">
+                    до
+                  </span>
+                  <input class="price-field max-price-field" type="number" name="maximal-price" value="9000">
+                </label>
+              </div>
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="right: 51px; width: 227px">
@@ -143,8 +155,8 @@
             </fieldset>
 
             <div class="filter-buttons">
-                  <button class="button button-second filter-submit-button" type="submit">Применить</button>
-                  <button class="filter-reset-button" type="reset">Сбросить</button>
+              <button class="button button-second filter-submit-button" type="submit">Применить</button>
+              <button class="filter-reset-button" type="reset">Сбросить</button>
             </div>
           </form>
         </div>
@@ -304,7 +316,7 @@
         <h2 class="title">Подпишитесь на рассылку</h2>
         <p class="title-description email-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
 
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="complex-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field newsletter-form-field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
           <button class="button button-second button-big button-form" type="submit">Подписаться</button>
         </form>
