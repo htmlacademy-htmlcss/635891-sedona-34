@@ -486,10 +486,14 @@ img {
     margin-bottom: 30px;
 }
 
+.scale-title {
+    margin-bottom: 34px;
+}
+
 .filter-item-label {
     position: relative;
     display: block;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
     
 }
 
@@ -543,7 +547,7 @@ img {
 
 .price-scale-group {
     display: flex;
-    margin-right: 70px;
+    margin-bottom: 27px;
 }
 
 .price-label {
@@ -553,20 +557,50 @@ img {
 .price-field {
     background: none;
     border: 2px solid #FFFFFF;
-    border-radius: 4px;
     width: 143px;
     height: 48px;
-    padding: 14px 19px 13px 19px;
+    padding: 14px 40px 13px 19px;
     font-size: 18px;
     line-height: 21px;
     color: inherit;
 }
 
+.price-field:hover {
+    opacity: 0.6;
+}
+
+.price-field:focus {
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 0px 0px 3px #81B3D2;
+    outline: none;
+}
+
+.price-field:active {
+    background: #756257;
+}
+
 .price-field-placeholder {
     position: absolute;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
     opacity: 0.3;
     top: 12px;
     right: 14px;
+}
+
+.min-price-field {
+    border-right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.max-price-field {
+    border-radius: 0 4px 4px 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 .filter-reset-button {
@@ -795,7 +829,10 @@ img {
 }
 
 .filter-price-scale {
-    margin: 0 0 0 auto;
+    margin-left: auto;
+    border: none;
+    margin-right: 70px;
+    padding: 0;
 }
 
 .filter-form {
@@ -805,6 +842,7 @@ img {
 .filter-buttons {
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
 }
 
 .hotel-search-results {
