@@ -557,24 +557,56 @@ img {
     margin-bottom: 27px;
 }
 
-.price-label {
-    position: relative;
+.range-group {
+   position: relative;
+   margin-right: -2px;
+   width: calc(50% + 1px);
 }
 
+.range-label {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    line-height: 23px;
+    opacity: 0.3;
+ }
+
 .price-field {
-    background: none;
+    background-color: transparent;
     border: 2px solid #FFFFFF;
-    width: 143px;
+    width: 100%;
     height: 48px;
-    padding: 14px 40px 13px 19px;
+    padding: 15px 44px 10px 19px;
     font-size: 18px;
     line-height: 21px;
     color: inherit;
     font-family: inherit;
 }
 
+.min-price-field {
+    border-radius: 4px 0 0 4px;
+}
+
+.max-price-field {
+    border-radius: 0 4px 4px 0;
+}
+
 .price-field:hover {
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.range-group:first-child .price-field:not(:active):not(:focus) {
+   border-right-color: transparent;
+}
+
+.range-group:first-child:hover + .range-group .price-field:not(:focus) {
+   border-left-color: transparent;
+}
+
+.range-group:first-child .price-field:hover:not(:active):not(:focus) {
+   border-right-color: rgba(255, 255, 255, 0.6);
 }
 
 .price-field:focus {
@@ -587,28 +619,10 @@ img {
     background: #756257;
 }
 
-.price-field-placeholder {
-    position: absolute;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    opacity: 0.3;
-    top: 12px;
-    right: 14px;
-}
-
-.min-price-field {
-    border-right: 0;
-    border-radius: 4px 0 0 4px;
-}
-
-.max-price-field {
-    border-radius: 0 4px 4px 0;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+.price-field::-webkit-outer-spin-button,
+.price-field::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
 }
 
 .filter-reset-button {
@@ -866,6 +880,7 @@ input[type="number"]::-webkit-inner-spin-button {
     border: none;
     margin-right: 70px;
     padding: 0;
+    width: 288px;
 }
 
 .filter-form {
@@ -1049,6 +1064,10 @@ input[type="number"]::-webkit-inner-spin-button {
     color: #FF5757;
 }
 
+.field:hover {
+    background-color: #E6E6E6;
+}
+
 .field:focus {
     outline: 3px solid #83B3D3;
 }
@@ -1056,4 +1075,5 @@ input[type="number"]::-webkit-inner-spin-button {
 .field:active {
     border: 2px solid #000000;
     outline: none;
+    background-color: #FFFFFF;
 }

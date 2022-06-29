@@ -126,18 +126,14 @@
           <fieldset class="filter-price-scale">              
             <legend class="catalog-filter-title scale-title">Стоимость, ₽:</legend>
             <div class="price-scale-group">
-              <label class="price-label">
-                <span class="price-field-placeholder">
-                  от
-                </span>
-                <input class="price-field min-price-field" type="number" name="minimal-price" value="0">
-              </label>
-              <label class="price-label">
-                <span class="price-field-placeholder">
-                  до
-                </span>
-                <input class="price-field max-price-field" type="number" name="maximal-price" value="9000">
-              </label>
+              <div class="range-group">
+                  <input class="price-field min-price-field" id="price-min" type="number" name="minimal-price" value="0">
+                  <label class="range-label" for="price-min">от</label>
+              </div>
+              <div class="range-group">
+                  <input class="price-field max-price-field" id="price-max" type="number" name="maximal-price" value="9000">
+                  <label class="range-label" for="price-max">до</label>
+              </div>
             </div>
             <div class="range">
               <div class="range-scale">
