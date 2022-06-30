@@ -196,11 +196,19 @@
           <div class="guest-amount">
             <div class="options-wrapper guest-wrapper">
               <label class="title-secondary modal-label" for="adult">Взрослые:</label>
-              <input class="field modal-field guest-field" id="adult" type="number" name="adult-amount" value="1">
+              <div class="amount-wrapper">
+                <input class="field modal-field guest-field" id="adult" type="number" name="adult-amount" value="2" min="1" max="99">
+                <button class="amount min-amount" type="button"></button>
+                <button class="amount max-amount" type="button"></button>
+              </div>
             </div>
             <div class="options-wrapper guest-wrapper">
               <label class="title-secondary modal-label second-modal-label" for="kids">Дети:</label>
-              <input class="field modal-field guest-field" id="kids" type="number" name="kids-amount" value="0">
+              <div class="amount-wrapper">
+                <input class="field modal-field guest-field" id="kids" type="number" name="kids-amount" value="1" min="0" max="99">
+                <button class="amount min-amount" type="button"></button>
+                <button class="amount max-amount" type="button"></button>
+              </div>
             </div>
           </div>
 

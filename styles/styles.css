@@ -619,8 +619,8 @@ img {
     background: #756257;
 }
 
-.price-field::-webkit-outer-spin-button,
-.price-field::-webkit-inner-spin-button {
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
     appearance: none;
     margin: 0;
 }
@@ -1132,6 +1132,7 @@ img {
 
 .guest-field {
     width: 133px;
+    text-align: center;
 }
 
 .modal-options {
@@ -1172,6 +1173,35 @@ img {
     outline: 3px solid #756257;
 }
 
-.modal-container-close {
+/*.modal-container-close {
     display: none;
+}*/
+
+.amount-wrapper {
+    position: relative;
 }
+
+.amount {
+    position: absolute;
+    width: 44px;
+    height: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.min-amount {
+    background-image: url(../images/icons/minus.svg);
+    top: 0;
+    left: 0;
+}
+
+.max-amount {
+    background-image: url(../images/icons/plus.svg);
+    top: 0;
+    right: 0;
+}
+
