@@ -170,6 +170,47 @@
         </svg>
       </a>
 
-    </footer>    
+    </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+
+        <section class="modal-content">
+          <h2 class="title modal-title">Поиск гостиницы в Седоне</h2>
+        </section>
+
+        <form class="modal-options" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="options-wrapper">
+            <label class="title-secondary modal-label" for="date-start">Дата Заезда:</label>
+            <input class="field modal-field" id="date-start" type="date" name="arrival-date">
+          </div>
+          <div class="options-wrapper">
+            <label class="title-secondary modal-label" for="date-end">Дата Выезда:</label>
+            <input class="field modal-field" id="date-end" type="date" name="departure-date" value="0">
+          </div>
+
+          <div class="guest-amount">
+            <div class="options-wrapper guest-wrapper">
+              <label class="title-secondary modal-label" for="adult">Взрослые:</label>
+              <input class="field modal-field guest-field" id="adult" type="number" name="adult-amount" value="1">
+            </div>
+            <div class="options-wrapper guest-wrapper">
+              <label class="title-secondary modal-label second-modal-label" for="kids">Дети:</label>
+              <input class="field modal-field guest-field" id="kids" type="number" name="kids-amount" value="0">
+            </div>
+          </div>
+
+          <button class="button button-second button-big modal-button" type="button">
+            <span>Найти</span>
+          </button>
+        </form>
+
+      </div>
+    </div>
+
   </body>
 </html>
