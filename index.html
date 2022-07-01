@@ -181,41 +181,47 @@
 
         <section class="modal-content">
           <h2 class="title modal-title">Поиск гостиницы в Седоне</h2>
+
+          <form class="modal-options" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="options-wrapper">
+              <label class="title-secondary modal-label" for="date-start">Дата Заезда:</label>
+              <div class="date-wrapper">
+                <input class="field modal-field date-field" id="date-start" type="date" name="arrival-date" required>
+                <span class="field-hint field-error-hint">Мы не можем отправить вас в прошлое.</span>
+              </div>
+            </div>
+            <div class="options-wrapper">
+              <label class="title-secondary modal-label" for="date-end">Дата Выезда:</label>
+              <div class="date-wrapper">
+                <input class="field modal-field date-field" id="date-end" type="date" name="departure-date" required>
+                <span class="field-hint">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+            </div>
+
+            <div class="guest-amount">
+              <div class="options-wrapper guest-wrapper">
+                <label class="title-secondary modal-label" for="adult">Взрослые:</label>
+                <div class="amount-wrapper">
+                  <input class="field modal-field guest-field" id="adult" type="number" name="adult-amount" value="2" min="1" max="99">
+                  <button class="amount min-amount" type="button"></button>
+                  <button class="amount max-amount" type="button"></button>
+                </div>
+              </div>
+              <div class="options-wrapper guest-wrapper">
+                <label class="title-secondary modal-label second-modal-label" for="kids">Дети:</label>
+                <div class="amount-wrapper">
+                  <input class="field modal-field guest-field" id="kids" type="number" name="kids-amount" value="1" min="0" max="99">
+                  <button class="amount min-amount" type="button"></button>
+                  <button class="amount max-amount" type="button"></button>
+                </div>
+              </div>
+            </div>
+
+            <button class="button button-second button-big modal-button" type="button">
+              <span>Найти</span>
+            </button>
+          </form>
         </section>
-
-        <form class="modal-options" action="https://echo.htmlacademy.ru/" method="get">
-          <div class="options-wrapper">
-            <label class="title-secondary modal-label" for="date-start">Дата Заезда:</label>
-            <input class="field modal-field" id="date-start" type="date" name="arrival-date">
-          </div>
-          <div class="options-wrapper">
-            <label class="title-secondary modal-label" for="date-end">Дата Выезда:</label>
-            <input class="field modal-field" id="date-end" type="date" name="departure-date" value="0">
-          </div>
-
-          <div class="guest-amount">
-            <div class="options-wrapper guest-wrapper">
-              <label class="title-secondary modal-label" for="adult">Взрослые:</label>
-              <div class="amount-wrapper">
-                <input class="field modal-field guest-field" id="adult" type="number" name="adult-amount" value="2" min="1" max="99">
-                <button class="amount min-amount" type="button"></button>
-                <button class="amount max-amount" type="button"></button>
-              </div>
-            </div>
-            <div class="options-wrapper guest-wrapper">
-              <label class="title-secondary modal-label second-modal-label" for="kids">Дети:</label>
-              <div class="amount-wrapper">
-                <input class="field modal-field guest-field" id="kids" type="number" name="kids-amount" value="1" min="0" max="99">
-                <button class="amount min-amount" type="button"></button>
-                <button class="amount max-amount" type="button"></button>
-              </div>
-            </div>
-          </div>
-
-          <button class="button button-second button-big modal-button" type="button">
-            <span>Найти</span>
-          </button>
-        </form>
 
       </div>
     </div>
