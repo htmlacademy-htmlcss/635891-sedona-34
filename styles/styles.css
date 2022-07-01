@@ -1152,10 +1152,6 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 50%;
 }
 
-.second-modal-label {
-    margin-left: 56px;
-}
-
 .modal-button {
     padding-left: 26px;
     padding-right: 26px;
@@ -1224,4 +1220,39 @@ input[type=date]::-webkit-calendar-picker-indicator {
     color: #FF5757;
 }
 
+.tooltip {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
 
+.tooltip-toggle {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.tooltip-icon {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.tooltip-text {
+    background-color: #333333;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: none;
+    padding: 15px 18px 18px 22px;
+    border-radius: 10px;
+    display: block;
+    width: 256px;
+    position: absolute;
+    margin-top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
