@@ -210,7 +210,7 @@ img {
 .filter-submit-button {
     width: 160px;
     height: 48px;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 
 .welcome-text {
@@ -424,7 +424,6 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     line-height: 21px;
-    min-height: 393px;
     background-position: top center;
     padding: 35px 70px 70px;
 }
@@ -496,7 +495,7 @@ img {
     position: relative;
     display: block;
     margin-bottom: 15px;
-    
+    font-size: 18px;    
 }
 
 .item-mark {
