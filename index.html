@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Седона: Главная</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
     
@@ -131,7 +132,7 @@
 
         <form class="complex-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field newsletter-form-field" placeholder="Ваш e-mail" type="email" name="email" required>
-          <button class="button button-second button-big button-form" type="submit">Подписаться</button>
+          <button class="button button-second button-big complex-form-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -186,14 +187,16 @@
             <div class="options-wrapper">
               <label class="title-secondary modal-label" for="date-start">Дата Заезда:</label>
               <div class="date-wrapper">
-                <input class="field modal-field date-field" id="date-start" type="date" name="arrival-date" required>
+                <input class="field modal-field date-field" id="date-start" type="text" name="arrival-date" placeholder="Укажите дату" value="27 апреля 2020" required>
+                <button class="button field-calendar-button" type="button"></button>
                 <span class="field-hint field-error-hint">Мы не можем отправить вас в прошлое.</span>
               </div>
             </div>
             <div class="options-wrapper">
               <label class="title-secondary modal-label" for="date-end">Дата Выезда:</label>
               <div class="date-wrapper">
-                <input class="field modal-field date-field" id="date-end" type="date" name="departure-date" required>
+                <input class="field modal-field date-field" id="date-end" type="text" name="departure-date" placeholder="Укажите дату" value="1 сентября 2021" required>
+                <button class="button field-calendar-button" type="button"></button>
                 <span class="field-hint">На эти даты есть свободные номера. Пока есть.</span>
               </div>
             </div>
@@ -202,27 +205,41 @@
               <div class="options-wrapper guest-wrapper">
                 <label class="title-secondary modal-label" for="adult">Взрослые:</label>
                 <div class="amount-wrapper">
-                  <input class="field modal-field guest-field" id="adult" type="number" name="adult-amount" value="2" min="1" max="99">
-                  <button class="amount min-amount" type="button"></button>
-                  <button class="amount max-amount" type="button"></button>
+                  <button class="amount min-amount" type="button">
+                    <svg width="13" height="13" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                    </svg>               
+                  </button>
+                  <input class="field modal-field guest-field" id="adult" type="number" name="adult-amount" min="1" max="99" value="2">
+                  <button class="amount max-amount" type="button">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                    </svg>
+                  </button>
                 </div>
               </div>
               <div class="options-wrapper guest-wrapper">
-                <span class="second-modal-label">
+                <span class="second-modal-group">
                   <label class="title-secondary modal-label second-modal-label" for="kids">Дети:</label>
                   <span class="tooltip">
-                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                      <svg class="tooltip-icon" width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3"/><g clip-path="url(#a)" fill="#fff"><path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(12 8)" d="M0 0h1v9H0z"/></clipPath></defs></svg>
-                    </button>
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
                     <span class="tooltip-text" role="tooltip" id="tooltip-label">
                       Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                     </span>
                   </span>
                 </span>
                 <div class="amount-wrapper">
-                  <input class="field modal-field guest-field" id="kids" type="number" name="kids-amount" value="1" min="0" max="99">
-                  <button class="amount min-amount" type="button"></button>
-                  <button class="amount max-amount" type="button"></button>
+                  <button class="amount min-amount" type="button">
+                    <svg width="13" height="13" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                    </svg>  
+                  </button>
+                  <input class="field modal-field guest-field" id="kids" type="number" name="kids-amount" min="0" max="99" value="1">
+                  <button class="amount max-amount" type="button">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
