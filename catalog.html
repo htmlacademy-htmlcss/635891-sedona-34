@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Седона: Гостиницы</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
   </head>
   <body>
     
@@ -127,11 +129,11 @@
             <legend class="title-secondary scale-title">Стоимость, ₽:</legend>
             <div class="price-scale-group">
               <div class="range-group">
-                  <input class="price-field min-price-field" id="price-min" type="number" name="minimal-price" value="0">
+                  <input class="price-field min-price-field" id="price-min" type="number" name="minimal-price" min="0" value="0">
                   <label class="range-label" for="price-min">от</label>
               </div>
               <div class="range-group">
-                  <input class="price-field max-price-field" id="price-max" type="number" name="maximal-price" value="9000">
+                  <input class="price-field max-price-field" id="price-max" type="number" name="maximal-price" min="0" value="9000">
                   <label class="range-label" for="price-max">до</label>
               </div>
             </div>

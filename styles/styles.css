@@ -209,7 +209,7 @@ img {
 
 .filter-submit-button {
     width: 160px;
-    height: 48px;
+    min-height: 48px;
     margin-bottom: 8px;
 }
 
@@ -477,7 +477,7 @@ img {
     margin: 0 10px;
     display: inline-block;
     content: "";
-    }
+}
 
 .title-secondary {
     font-weight: 700;
@@ -570,7 +570,7 @@ img {
     font-size: 18px;
     line-height: 23px;
     opacity: 0.3;
- }
+}
 
 .price-field {
     background-color: transparent;
@@ -633,7 +633,7 @@ input[type="number"]::-webkit-inner-spin-button {
     border: none;
     cursor: pointer;
     width: 100px;
-    height: 32px;
+    min-height: 32px;
 }
 
 .filter-reset-button:hover {
@@ -699,6 +699,7 @@ input[type="number"]::-webkit-inner-spin-button {
     color: #333333;
     font-size: 18px;
     line-height: 21px;
+    margin-left: 20px;
 }
 
 .rating {
@@ -713,7 +714,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .pagination-link {
-    width: 60px;
+    min-width: 60px;
     height: 60px;
     font-size: 20px;
     line-height: 36px;
@@ -785,7 +786,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .header-navigation-user .header-navigation-item:nth-child(2) {
     margin-right: 20px;
-  }
+}
 
 .illustrated-items {
     display: flex;
@@ -1166,9 +1167,9 @@ input[type="number"]::-webkit-inner-spin-button {
     outline: 3px solid #756257;
 }
 
-/*.modal-container-close {
+.modal-container-close {
     display: none;
-}*/
+}
 
 .amount-wrapper {
     display: flex;
@@ -1310,13 +1311,14 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .amount:focus svg {
-    outline: 3px solid #83B3D3;
+    border: 3px solid #83B3D3;
     border-radius: 4px;
     opacity: unset;
 }
 
 .amount:active svg {
     opacity: 0.2;
+    border-color: transparent;
 }
 
 .guest-field:hover,
