@@ -686,7 +686,7 @@ input[type='number'] {
 .select-total {
     width: 160px;
     height: 50px;
-    margin-left: 51px;
+    margin-left: 47px;
     font-size: 18px;
     line-height: 21px;
 }
@@ -898,10 +898,6 @@ input[type='number'] {
     align-items: center;
 }
 
-.hotel-search-results {
-    width: 1056px;
-}
-
 .select-wrapper {
     display: flex;
     align-items: center;
@@ -950,7 +946,7 @@ input[type='number'] {
     margin-bottom: 0;
 }
 
-.hotel-catalog-container {
+.hotel-search-results {
     margin: 0 71px 0 73px;
 }
 
