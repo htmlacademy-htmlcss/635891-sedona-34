@@ -667,6 +667,7 @@ input[type='number'] {
     background-repeat: no-repeat;
     background-position: center right 20px;
     appearance: none;
+    background-color: #FFFFFF;
 }
 
 .select-control:hover, .select-control:focus {
@@ -952,7 +953,7 @@ input[type='number'] {
 
 .product-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat( auto-fill, minmax(340px, 1fr) );
     column-gap: 18px;
     margin: 0;
     padding: 0;
@@ -1109,28 +1110,53 @@ input[type='number'] {
     background-color: #F2F2F2;
     border-radius: 50%;
     border: none;
-    background-image: url(../images/icons/modal-close.svg);
-    background-repeat: no-repeat;
-    background-position: center;
     cursor: pointer;
+}
+
+.modal-close-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.modal-close-button:hover {
+    background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+    outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+    outline: none;
+}
+
+.modal-close-button:active .modal-close-icon {
+    opacity: 0.3;
 }
 
 .modal-title {
     text-align: left;
     margin-bottom: 63px;
+    padding-right: 60px;
 }
 
 .modal-field {
     color: rgba(0, 0, 0, 0.6);
     width: 420px;
     height: 50px;
-    font-weight: 700;
+    padding: 14px 19px 15px 19px;
 }
 
 .guest-field {
     text-align: center;
     width: 44px;
     padding: 0;
+    background-color: #F2F2F2;
+    z-index: 2;
 }
 
 .modal-options {
@@ -1183,9 +1209,10 @@ input[type='number'] {
     cursor: pointer;
     border: none;
     padding: 0;
-    background-position: center;
-    background-repeat: no-repeat;
     background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .min-amount {
@@ -1222,6 +1249,7 @@ input[type='number'] {
     left: 0;
     line-height: 21px;
     font-size: 16px;
+    z-index: 2;
 }
 
 .field-error-hint {
@@ -1311,21 +1339,15 @@ input[type='number'] {
 }
 
 .amount:focus svg {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
+    outline-offset: 1px;
     border-radius: 4px;
-    opacity: unset;
+    opacity: 1;
 }
 
 .amount:active svg {
     opacity: 0.2;
-    border-color: transparent;
+    outline: transparent;
 }
 
-.guest-field:hover,
-.guest-field:focus,
-.guest-field:active {
-    background-color: #F2F2F2;
-    border: 0;
-    outline: 0;
-}
 
