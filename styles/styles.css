@@ -577,7 +577,7 @@ img {
     border: 2px solid #FFFFFF;
     width: 100%;
     height: 48px;
-    padding: 15px 44px 10px 19px;
+    padding: 10px 44px 10px 16px;
     font-size: 18px;
     line-height: 21px;
     color: inherit;
@@ -909,6 +909,7 @@ input[type='number'] {
     display: flex;
     gap: 8px;
     margin-left: 78px;
+    flex-wrap: wrap;
 }
 
 .layout-list {
@@ -981,9 +982,31 @@ input[type='number'] {
     margin: 0 0 16px;
 }
 
-.star-wrap {
-    display: flex;
-    gap: 6px;
+.rating-stars {
+    background-image: url(../images/icons/star.svg);
+    background-repeat: space;
+    background-position: left center;
+    height: 17px;
+}
+
+.rating-stars-five {
+    width: 114px;
+}
+
+.rating-stars-four {
+    width: 89px;
+}
+
+.rating-stars-three {
+    width: 66px;
+}
+
+.rating-stars-two {
+    width: 42px;
+}
+
+.rating-stars-one {
+    width: 17px;
 }
 
 .pagination {
@@ -1022,7 +1045,6 @@ input[type='number'] {
     position: absolute;
     height: 4px;
     background-color: #FFFFFF;
-    width: 227px;
 }
 
 .range-toggle {
@@ -1051,11 +1073,12 @@ input[type='number'] {
 
 .toggle-min {
     top: -8px;
+    left: 0;
 }
   
 .toggle-max {
     top: -8px;
-    right: -10px;
+    right: -8px;
 }
 
 .field:hover {
