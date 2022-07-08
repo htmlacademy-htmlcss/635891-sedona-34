@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Седона: Главная</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
   </head>
   <body>
     
@@ -131,7 +133,7 @@
 
         <form class="complex-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field newsletter-form-field" placeholder="Ваш e-mail" type="email" name="email" required>
-          <button class="button button-second button-big button-form" type="submit">Подписаться</button>
+          <button class="button button-second button-big complex-form-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -170,6 +172,90 @@
         </svg>
       </a>
 
-    </footer>    
+    </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+
+        <button class="modal-close-button" type="button">
+          <svg class="modal-close-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" fill="#000"/>
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+
+        <section class="modal-content">
+          <h2 class="title modal-title">Поиск гостиницы в Седоне</h2>
+
+          <form class="modal-options" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="options-wrapper">
+              <label class="title-secondary modal-label" for="date-start">Дата Заезда:</label>
+              <div class="date-wrapper">
+                <input class="field modal-field date-field" id="date-start" type="text" name="arrival-date" placeholder="Укажите дату" value="27 апреля 2020" required>
+                <button class="button field-calendar-button" type="button"></button>
+                <span class="field-hint field-error-hint">Мы не можем отправить вас в прошлое.</span>
+              </div>
+            </div>
+            <div class="options-wrapper">
+              <label class="title-secondary modal-label" for="date-end">Дата Выезда:</label>
+              <div class="date-wrapper">
+                <input class="field modal-field date-field" id="date-end" type="text" name="departure-date" placeholder="Укажите дату" value="1 сентября 2021" required>
+                <button class="button field-calendar-button" type="button"></button>
+                <span class="field-hint">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+            </div>
+
+            <div class="guest-amount">
+              <div class="options-wrapper guest-wrapper">
+                <label class="title-secondary modal-label" for="adult">Взрослые:</label>
+                <div class="amount-wrapper">
+                  <button class="amount min-amount" type="button">
+                    <svg aria-hidden="true" focusable="false" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.61426 11.5V13.5H19.6143V11.5H5.61426Z" fill="black"/>
+                    </svg>
+                  </button>
+                  <input class="field modal-field guest-field" id="adult" type="number" name="adult-amount" min="1" max="99" value="2" required>
+                  <button class="amount max-amount" type="button">
+                    <svg aria-hidden="true" focusable="false" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19 11.5H13V5.5H11V11.5H5V13.5H11V19.5H13V13.5H19V11.5Z" fill="black"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="options-wrapper guest-wrapper">
+                <span class="second-modal-group">
+                  <label class="title-secondary modal-label second-modal-label" for="kids">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    </span>
+                  </span>
+                </span>
+                <div class="amount-wrapper">
+                  <button class="amount min-amount" type="button">
+                    <svg aria-hidden="true" focusable="false" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.61426 11.5V13.5H19.6143V11.5H5.61426Z" fill="black"/>
+                    </svg> 
+                  </button>
+                  <input class="field modal-field guest-field" id="kids" type="number" name="kids-amount" min="0" max="99" value="1" required>
+                  <button class="amount max-amount" type="button">
+                    <svg aria-hidden="true" focusable="false" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19 11.5H13V5.5H11V11.5H5V13.5H11V19.5H13V13.5H19V11.5Z" fill="black"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <button class="button button-second button-big modal-button" type="button">
+              <span>Найти</span>
+            </button>
+          </form>
+        </section>
+
+      </div>
+    </div>
+
   </body>
 </html>
