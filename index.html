@@ -10,7 +10,7 @@
   <body>
     
     <header class="page-header">
-      
+
       <a class="page-header-logo">
         <img src="images/logo-sedona.svg" width="138" height="70" alt="Логотип сайта Седона.">
       </a>
@@ -44,7 +44,7 @@
         <li class="header-navigation-item">
           <button class="button button-basic header-navigation-button" type="button">Хочу сюда!</button>
         </li>
-      </ul>    
+      </ul>
 
     </header>
 
@@ -70,18 +70,18 @@
               </div>
               <img class="features-item-picture" src="images/advantage-city.jpg" width="800" height="384" alt="Улица города Седоны с домами и цветущими деревьями.">
             </div>
-            <ul class="advantages-city-list list-clear">
-              <li class="advantages-city-item advantages-city-hotels features-card">
-                <h3 class="advantages-city-title">Жильё</h3>
-                <p class="advantages-city-description">Рекомендуем пожить в&nbsp;настоящем мотеле,<br>всё как в&nbsp;кино!</p>
+            <ul class="advantages-additional-list list-clear">
+              <li class="advantages-additional-item advantages-additional-hotels features-card">
+                <h3 class="advantages-additional-title">Жильё</h3>
+                <p class="advantages-additional-description">Рекомендуем пожить в&nbsp;настоящем мотеле,<br>всё как в&nbsp;кино!</p>
               </li>
-              <li class="advantages-city-item advantages-city-food features-card">
-                <h3 class="advantages-city-title">Еда</h3>
-                <p class="advantages-city-description">Всегда заказывайте<br>топовый фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
+              <li class="advantages-additional-item advantages-additional-food features-card">
+                <h3 class="advantages-additional-title">Еда</h3>
+                <p class="advantages-additional-description">Всегда заказывайте<br>топовый фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
               </li>
-              <li class="advantages-city-item advantages-city-souvenirs features-card">
-                <h3 class="advantages-city-title">Сувениры</h3>
-                <p class="advantages-city-description">Не&nbsp;только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
+              <li class="advantages-additional-item advantages-additional-souvenirs features-card">
+                <h3 class="advantages-additional-title">Сувениры</h3>
+                <p class="advantages-additional-description">Не&nbsp;только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
               </li>
             </ul>
           </li>
@@ -132,14 +132,16 @@
         </p>
 
         <form class="complex-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="field newsletter-form-field" placeholder="Ваш e-mail" type="email" name="email" required>
+          <label class="visually-hidden" for="newsletter-email">E-mail.</label>
+          <input class="field newsletter-form-field" type="email" placeholder="Ваш e-mail" name="subscription-email" id="newsletter-email" required>
           <button class="button button-second button-big complex-form-button" type="submit">Подписаться</button>
         </form>
       </section>
+
     </main>
 
     <footer class="footer">
-        
+
       <ul class="social-media-list list-clear">
         <li class="social-media-item">
           <a class="social" href="https://vk.com/htmlacademy" target="_blank">
@@ -175,8 +177,8 @@
     </footer>
 
     <div class="modal-container modal-container-close">
-      <div class="modal modal-search">
 
+      <div class="modal">
         <button class="modal-close-button" type="button">
           <svg class="modal-close-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" fill="#000"/>
@@ -187,7 +189,7 @@
         <section class="modal-content">
           <h2 class="title modal-title">Поиск гостиницы в Седоне</h2>
 
-          <form class="modal-options" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="modal-options" action="https://echo.htmlacademy.ru/" method="post">
             <div class="options-wrapper">
               <label class="title-secondary modal-label" for="date-start">Дата Заезда:</label>
               <div class="date-wrapper">
@@ -248,13 +250,13 @@
               </div>
             </div>
 
-            <button class="button button-second button-big modal-button" type="button">
-              <span>Найти</span>
+            <button class="button button-second button-big modal-button" type="submit">
+              Найти
             </button>
           </form>
         </section>
-
       </div>
+
     </div>
 
   </body>
