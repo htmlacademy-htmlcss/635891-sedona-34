@@ -308,6 +308,8 @@ img {
     object-fit: cover;
     object-position: center;
     background-color: #756157;
+    width: 100%;
+    height: 100%;
 }
 
 .advantages-additional-list {
@@ -371,7 +373,7 @@ img {
 }
 
 .email-subscription {
-    height: 411px;
+    min-height: 411px;
     padding: 94px 70px;
 }
 
@@ -665,14 +667,18 @@ input[type='number'] {
     font-family: inherit;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
-    width: 290px;
-    height: 50px;
-    padding: 12px 19px;
+    padding: 12px 50px 12px 19px;
     background-image: url("../images/icons/arrow.svg");
     background-repeat: no-repeat;
     background-position: center right 20px;
     appearance: none;
     background-color: #FFFFFF;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.select-price {
+    width: 290px;
 }
 
 .select-control:hover, .select-control:focus {
@@ -986,6 +992,7 @@ input[type='number'] {
 .product-card-image {
     display: block;
     width: 100%;
+    height: 100%;
     background-color: #68A2CA;
     object-fit: cover;
     object-position: center;
@@ -1106,10 +1113,15 @@ input[type='number'] {
 }
 
 .field:active {
-    border: 2px solid #000000;
+    box-shadow: inset 0 0 0 2px #000000;
     outline: none;
     background-color: #FFFFFF;
     color: #000000;
+}
+
+.field:disabled {
+    color: #000000;
+    opacity: 0.3;
 }
 
 .modal-container {
@@ -1184,6 +1196,7 @@ input[type='number'] {
     width: 420px;
     height: 50px;
     padding: 14px 19px 15px 19px;
+    border: 2px solid #f2f2f2;
 }
 
 .guest-field {
