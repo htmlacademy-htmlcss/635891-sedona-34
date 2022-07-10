@@ -59,10 +59,6 @@ img {
     display: inline-block;
     padding: 9px 15px 8px;
     margin: 0;
-}
-
-.button:disabled {
-    background-color: #E5E5E5;
 } 
 
 .button-basic {
@@ -117,6 +113,12 @@ img {
 .complex-form-button {
     border-radius: 0 10px 10px 0;
     width: 200px;
+}
+
+.button:disabled {
+    background-color: #E5E5E5;
+    color: #FFFFFF;
+    cursor: default;
 }
 
 .visually-hidden {
@@ -520,16 +522,22 @@ img {
 }
 
 .control:hover + .item-mark {
-    background: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .control:focus + .item-mark {
-    background: rgba(255, 255, 255, 0.6);
-    outline: 3px solid #83B3D3;
+    background-color: rgba(255, 255, 255, 0.6);
+    outline: none;
+    box-shadow: 0 0 0 3px #83B3D3;
 }
 
 .control:active + .item-mark {
-    background: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control:disabled + .item-mark,
+.control:disabled:hover + .item-mark {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .control[type="checkbox"]:checked + .item-mark {
@@ -543,6 +551,10 @@ img {
     background-color: #FFFFFF;
 }
 
+.control[type="radio"]:disabled + .item-mark {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 .control[type="radio"]:checked + .item-mark::before {
     position: absolute;
     width: 10px;
@@ -552,7 +564,7 @@ img {
     content: "";
     top: 5px;
     left: 5px;
-}
+} 
 
 .filter-item:last-child .filter-item-label {
     margin-bottom: 0;
@@ -948,17 +960,30 @@ input[type='number'] {
 .layout-button {
     width: 48px;
     height: 48px;
-    border: 2px solid #E5E5E5;
+    box-shadow: inset 0 0 0 2px #E5E5E5;
     border-radius: 4px;
     background-position: center;
 }
 
+.layout-current, 
+.results-view-current:hover,
+.results-view-current:focus,
+.results-view-current:active {
+    box-shadow: inset 0 0 0 2px #000000;
+    cursor: default;
+}
+
 .layout-button:focus {
-    border: 2px solid #68A2CA;
+    box-shadow: inset 0 0 0 2px #68A2CA;
+    outline: none;
 }
 
 .layout-button:hover, .layout-button:active {
-    border: 2px solid #000000;
+    box-shadow: inset 0 0 0 2px #000000;
+}
+
+.layout-button:disabled {
+    opacity: 0.3;
 }
 
 .select-title {
